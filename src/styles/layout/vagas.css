@@ -69,6 +69,7 @@ hr{
 }
 .va-content__block-date{
     font-style: italic;
+    padding-top: 5px;
 }
 
 
@@ -150,7 +151,7 @@ hr{
         font-size: 2.1vw;
     }
     .va-content__block-date{
-        font-size: 1.8vw;
+        font-size: 1.9vw;
     }
 }
 
@@ -194,10 +195,28 @@ hr{
 /*Break-Point 500*/
 @media (max-width: 500px){
     .va-content__block-desc{
-        font-size: 3vw;
+        font-size: 3.2vw;
         margin-bottom: 10px;
     }
     .va-content__block-date{
-        font-size: 2.8vw;
+        font-size: 3vw;
+    }
+}
+
+/*Break-Point 400*/
+@media (max-width: 400px){
+    #va-title>h1{
+        font-size: 35px;
+    }
+    #va-title__info>p{
+        font-size: 3.5vw;
+    }
+
+    .va-content__block-desc{
+        font-size: 3.2vw;
+        margin-bottom: 10px;
+    }
+    .va-content__block-date{
+        font-size: 3vw;
     }
 }

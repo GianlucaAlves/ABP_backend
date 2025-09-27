@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../src/styles/global.css">
     <link rel="stylesheet" href="../src/styles/layout/vagas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/styles/components/title.css">
     <title>ABP 1</title>
 </head>
 <body>
@@ -69,7 +70,7 @@
     <!--colar o código da página-->
     <main>
         <div id="va-title">
-            <h1>Vagas em aberto</h1>
+            <h1 id="title">Vagas em aberto</h1>
             <div id="va-title__info">
                 <p>Última atualização em <em>data a definir</em></p>
                 <div id="va-title__info-nav">
@@ -82,10 +83,10 @@
                     </span>
                     <span>
                         <i class="fa-brands fa-instagram fa-xl" style="color: #2f4f4f;"></i>
-                    </span>              
+                    </span>
                 </div>
             </div>
-            <hr>
+            <div class="title-line"></div>
         </div>
         <div id="va-content">
             <div class="va-content__block">
@@ -123,17 +124,17 @@
 
     <footer>
         <div class="footer">
-            <div class="footer-title"><b>AgrisLab</b></div>
+            <div class="footer-title"><a href=""></a><b>AgrisLab</b></div>
             <div class="footer-options">
 
-                <b><a href="">Home</a></b>
-                <b><a href="">Sobre</a></b>
-                <b><a href="">Membros</a></b>
-                <b><a href="">Projetos</a></b>
-                <b><a href="">Vagas</a></b>
-                <b><a href="">Feed</a></b>
-                <b><a href="">Notícias</a></b>
-                <b><a href="">Contato</a></b>
+                <b><a href="home.html">Home</a></b>
+                <b><a href="sobre.html">Sobre</a></b>
+                <b><a href="membros.html">Membros</a></b>
+                <b><a href="projetos.html">Projetos</a></b>
+                <b><a href="vagas.html">Vagas</a></b>
+                <b><a href="publicacoes.html">Feed</a></b>
+                <b><a href="noticias.html">Notícias</a></b>
+                <b><a href="contato.html">Contato</a></b>
 
             </div>
             <hr>
@@ -148,5 +149,26 @@
             </div>
         </div>
     </footer>
+    
+    <div class="responsive-footer">
+    
+        <div class="infos">
+            <div class="footer-title"><a href="#"></a><b>AgrisLab</b></div>
+            <hr>
+            <div class="footer-bottom">
+            <div class="dev-team">
+                <p>©2025 Nighthawks. <br> All rights reserved.</p>
+            </div>
+            </div>
+            <div class="responsive-social">
+            <div class="social-midia">
+                <a href="#" class="linkedin2"><img src="../src/assets/image/linkedin.png" alt=""></a>
+                <a href="#" class="instagram2"><img src="../src/assets/image/instagram.png" alt=""></a>
+            </div>
+        </div>
+        </div>
+
+        </label>
+    </div>
 </body>
 </html>

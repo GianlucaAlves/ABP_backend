@@ -1,27 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 :root {
-      --font: "PT Sans", sans-serif;
-}
-
-:root {
-      --color-1: #2F4F4F;
-      --color-2: #ffffff;
-      --color-3: #000000;
-      --color-4: #efecec;
-      --color-5: #245C4D;
-}
-
-      /* 1. Use a more-intuitive box-sizing model */
-      *,
-      *::before,
-      *::after {
-            box-sizing: border-box;
-      }
-
-/* 2. Remove default margin */
-* {
-      margin: 0;
+  --color-1: #2F4F4F;
+  --color-2: #ffffff;
+  --color-3: #000000;
+  --color-4: #efecec;
+  --color-5: #245C4D;
+  --color-6: #0574BB;
 }
 
 .mb-card {
@@ -134,12 +117,6 @@ button {
       opacity: 0;
 }
 
-main {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      flex-direction: column;
-}
 
 .mb-title {
       width: 80%;
@@ -159,7 +136,7 @@ main {
 }
 
 .mb-subtitle {
-      width: 80%;
+      width: 100%;
       position: relative;
       color: var(--color-1);
       display: flex;
@@ -179,9 +156,9 @@ main {
 
 .mb-cards {
       display: flex;
-      width: 80%;
+      width: 100%;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-evenly;
       margin-bottom: 5%;
 }
 
@@ -276,7 +253,7 @@ main {
 @media (max-width: 1100px) {
 
       .mb-cards {
-            width: 90%;
+            width: 100%;
       }
 
       .mb-desc {

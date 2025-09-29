@@ -11,9 +11,11 @@ body {
   padding: 1rem;
 }
 main {
-    max-width: 800px;
+    max-width: 70rem;
     margin: auto;
     padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 section {
     margin-bottom: 2rem;
@@ -36,7 +38,7 @@ li::before{
     color:black;
 }
 .so-line {
-    width:800px;
+    width:70rem;
     height:1px;
     background-color:#333;
     margin: 10px auto 0;

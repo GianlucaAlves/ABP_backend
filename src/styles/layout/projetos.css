@@ -118,6 +118,7 @@ article{
     justify-content: center;
     margin-bottom: 30px; 
     margin-top:30px;
+    cursor:pointer;
 }
 
 article img{
@@ -140,4 +141,15 @@ article::after {
 }
 h2{
     font-weight: bold;
+}
+h6{
+    display:inline-block;
+    margin-right: 2rem;
+}
+article p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+a {
+    color:black;
 }

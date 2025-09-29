@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AgriRSLab - Contato</title>
     <link rel="stylesheet" href="../src/styles/global.css">
     <link rel="stylesheet" href="../src/styles/layout/contato.css">
+    <link rel="stylesheet" href="../src/styles/components/title.css">
+    <link rel="icon" type="image/x-icon" href="../src/assets/image/Logo.svg">
 </head>
 
 <body>
@@ -14,51 +16,51 @@
         <div class="content-header">
             <div class="logo"></div>
             <div class="options">
+                <div class="box">
+                    <a href="home.html"><b>Home</b></a>
+                    <div class="center">
+                        <hr>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <a href="sobre.html"><b>AgrisLab</b></a>
+                    <div class="center">
+                        <hr>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="sobre.html">Sobre</a>
+
+                        <a href="membros.html">Membros</a>
+
+                        <a href="projetos.html">Projetos</a>
+
+                        <a href="atuacao.html">Área de atuação</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <a href="vagas.html"><b>Vagas</b></a>
+                    <div class="center">
+                        <hr>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <a href="publicacoes.html"><b>Publicações</b></a>
+                    <div class="center">
+                        <hr>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="publicacoes.html">Feed</a>
+
+                        <a href="noticias.html">Notícias</a>
+                    </div>
+                </div>
+
+                <hr>
                 <div class="selected-box">
-                    <a href=""><b>Home</b></a>
-                    <div class="center">
-                        <hr>
-                    </div>
-                </div>
-                <hr>
-                <div class="box">
-                    <a href=""><b>AgrisLab</b></a>
-                    <div class="center">
-                        <hr>
-                    </div>
-                    <div class="dropdown-content">
-                        <a href="">Sobre</a>
-
-                        <a href="">Membros</a>
-
-                        <a href="">Projetos</a>
-
-                        <a href="">Área de atuação</a>
-                    </div>
-                </div>
-                <hr>
-                <div class="box">
-                    <a href=""><b>Vagas</b></a>
-                    <div class="center">
-
-                    </div>
-                </div>
-                <hr>
-                <div class="box">
-                    <a href=""><b>Publicações</b></a>
-                    <div class="center">
-
-                    </div>
-                    <div class="dropdown-content">
-                        <a href="">Feed</a>
-
-                        <a href="">Notícias</a>
-                    </div>
-                </div>
-
-                <hr>
-                <div class="box">
-                    <a href=""><b>Contato</b></a>
+                    <a href="contato.html"><b>Contato</b></a>
                     <div class="center">
                         <hr>
                     </div>
@@ -83,7 +85,7 @@
         <!-- Menu Dropdown -->
         <nav class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <hr>
 
                 <li class="dropdown">
@@ -91,34 +93,35 @@
                     <label for="AgriRSLab-menu" class="menu-AgriRSLab">AgriRSLab <div class="icon-arrow"><img src="../src/assets/svg/caret-down-solid-full.svg" alt=""></div></label>
 
                     <div class="mbl-dropdown-content">
-                        <a href="#">Sobre</a>
-                        <a href="#">Membros</a>
-                        <a href="#">Projetos</a>
-                        <a href="#">Área de atuação</a>
+                        <a href="sobre.html">Sobre</a>
+                        <a href="membros.html">Membros</a>
+                        <a href="projetos.html">Projetos</a>
+                        <a href="atuacao.html">Área de atuação</a>
                     </div>
                 </li>
 
                 <hr>
-                <li><a href="#">Vagas</a></li>
+                <li><a href="vagas.html">Vagas</a></li>
                 <hr>
                 <li class="dropdown">
                     <input type="checkbox" id="Publicacoes-menu" class="dropdown-toggle">
                     <label for="Publicacoes-menu" class="menu-AgriRSLab">Publicações <div class="icon-arrow"><img src="../src/assets/svg/caret-down-solid-full.svg" alt=""></div></label>
 
                     <div class="mbl-dropdown-content">
-                        <a href="#">Feed</a>
-                        <a href="#">Notícias</a>
+                        <a href="publicacoes.html">Feed</a>
+                        <a href="noticias.html">Notícias</a>
                     </div>
                 </li>
                 <hr>
-                <li><a href="#">Contato</a></li>
+                <li><a href="contato.html">Contato</a></li>
 
             </ul>
         </nav>
     </div>
+
     <main>
-        <h1 id="co-title">Contato</h1>
-        <div class="co-title-line"></div>
+        <h1 id="title">Contato</h1>
+        <div class="title-line"></div>
 
         <div class="co-form-content">
             <div class="co-form-left">
@@ -144,19 +147,21 @@
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footer">
-            <div class="footer-title"><b>AgrisLab</b></div>
+            <div class="footer-title"><a href=""></a><b>AgrisLab</b></div>
             <div class="footer-options">
 
-                <b><a href="">Home</a></b>
-                <b><a href="">Sobre</a></b>
-                <b><a href="">Membros</a></b>
-                <b><a href="">Projetos</a></b>
-                <b><a href="">Vagas</a></b>
-                <b><a href="">Feed</a></b>
-                <b><a href="">Notícias</a></b>
-                <b><a href="">Contato</a></b>
+                <b><a href="home.html">Home</a></b>
+                <b><a href="sobre.html">Sobre</a></b>
+                <b><a href="membros.html">Membros</a></b>
+                <b><a href="projetos.html">Projetos</a></b>
+                <b><a href="atuacao.html">Área de atuação</a></b>
+                <b><a href="vagas.html">Vagas</a></b>
+                <b><a href="publicacoes.html">Feed</a></b>
+                <b><a href="noticias.html">Notícias</a></b>
+                <b><a href="contato.html">Contato</a></b>
 
             </div>
             <hr>
@@ -171,6 +176,27 @@
             </div>
         </div>
     </footer>
+    
+    <div class="responsive-footer">
+    
+        <div class="infos">
+            <div class="footer-title"><a href="#"></a><b>AgrisLab</b></div>
+            <hr>
+            <div class="footer-bottom">
+            <div class="dev-team">
+                <p>©2025 Nighthawks. <br> All rights reserved.</p>
+            </div>
+            </div>
+            <div class="responsive-social">
+            <div class="social-midia">
+                <a href="#" class="linkedin2"><img src="../src/assets/image/linkedin.png" alt=""></a>
+                <a href="#" class="instagram2"><img src="../src/assets/image/instagram.png" alt=""></a>
+            </div>
+        </div>
+        </div>
+
+        </label>
+    </div>
 </body>
 
 </html>

@@ -3,15 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-     <link rel="stylesheet" type="text/css" href="../src/styles/layout/home.css">
-    
+    <title>AgriRSLab - Home</title>
+    <link rel="stylesheet" href="../src/styles/global.css">
+    <link rel="stylesheet" type="text/css" href="../src/styles/layout/home.css">
+    <link rel="stylesheet" href="../src/styles/components/title.css">
+    <link rel="icon" type="image/x-icon" href="../src/assets/image/Logo.svg">
 </head>
 <body>
-    <!--colar o header padrão-->
-    <header></header>
+    <header>
+        <div class="content-header">
+            <div class="logo"></div>
+            <div class="options">
+                <div class="selected-box">
+                    <a href="home.html"><b>Home</b></a>
+                    <div class="center">
+                        <hr>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <a href="sobre.html"><b>AgrisLab</b></a>
+                    <div class="center">
+                        <hr>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="sobre.html">Sobre</a>
 
-    <!--colar o código da página-->
+                        <a href="membros.html">Membros</a>
+
+                        <a href="projetos.html">Projetos</a>
+
+                        <a href="atuacao.html">Área de atuação</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <a href="vagas.html"><b>Vagas</b></a>
+                    <div class="center">
+                        <hr>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <a href="publicacoes.html"><b>Publicações</b></a>
+                    <div class="center">
+                        <hr>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="publicacoes.html">Feed</a>
+
+                        <a href="noticias.html">Notícias</a>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="box">
+                    <a href="contato.html"><b>Contato</b></a>
+                    <div class="center">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="responsive-menu">
+        <div class="logo"></div>
+        <div class="space"></div>
+        <!-- Checkbox invisível para controlar o menu -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- Ícone hambúrguer -->
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Menu Dropdown -->
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <hr>
+
+                <li class="dropdown">
+                    <input type="checkbox" id="AgriRSLab-menu" class="dropdown-toggle">
+                    <label for="AgriRSLab-menu" class="menu-AgriRSLab">AgriRSLab <div class="icon-arrow"><img src="../src/assets/svg/caret-down-solid-full.svg" alt=""></div></label>
+
+                    <div class="mbl-dropdown-content">
+                        <a href="sobre.html">Sobre</a>
+                        <a href="membros.html">Membros</a>
+                        <a href="projetos.html">Projetos</a>
+                        <a href="atuacao.html">Área de atuação</a>
+                    </div>
+                </li>
+
+                <hr>
+                <li><a href="vagas.html">Vagas</a></li>
+                <hr>
+                <li class="dropdown">
+                    <input type="checkbox" id="Publicacoes-menu" class="dropdown-toggle">
+                    <label for="Publicacoes-menu" class="menu-AgriRSLab">Publicações <div class="icon-arrow"><img src="../src/assets/svg/caret-down-solid-full.svg" alt=""></div></label>
+
+                    <div class="mbl-dropdown-content">
+                        <a href="publicacoes.html">Feed</a>
+                        <a href="noticias.html">Notícias</a>
+                    </div>
+                </li>
+                <hr>
+                <li><a href="contato.html">Contato</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
     <main>
 
         <div class="ho-carrosel">
@@ -30,14 +135,15 @@
                 <div class="ho-carrosel-img4"></div>
                 <!-- Fim Imagens-->
                  <!-- Navegation auto-->
-                  <div class="ho-navigation-auto">
+                  
+            </div>
+                <div class="ho-navigation-auto">
                         <div class="ho-autobtn1"></div>
                         <div class="ho-autobtn2"></div>
                         <div class="ho-autobtn3"></div>
                         <div class="ho-autobtn4"></div>
 
                   </div>
-            </div>
                 <div class="ho-manual-navigation">
                         <label for="radio1" class="ho-manual-btn"></label>
                         <label for="radio2" class="ho-manual-btn"></label>
@@ -51,8 +157,11 @@
 
         </div>
             <!--texto inicial-->
-        <h1>Bem vindo ao AgriRSLab</h1>
+            <div class="ho-title">
+                <h1 id="title">Bem vindo ao AgriRSLab</h1>
         <p><h4>Agricultural Remote Sensing Laboratoy - INPE</h4></p>
+            </div>
+        
         <div class="ho-materia">
         <div class="ho-txtomateria">No AgriRS Lab, desenvolvemos pesquisas voltadas para a produção de ciência e tecnologia baseada em sensoriamento remoto e geoinformática, visando gerar conhecimentos básicos e aplicados para o setor agropecuário. O objetivo do AgriRS é desenvolver e aprimorar metodologias que efetivamente promovam o avanço sustentável da atividade agropecuária brasileira, contribuindo para o aumento da produtividade e da competitividade. Além disso, atuamos na formação de Mestres e de Doutores altamente qualificados, dentro do Programa de Pós-Graduação em Sensoriamento Remoto do INPE (PGSER). Caso queiram saber mais sobre o nosso laboratório e nossas pesquisas, por favor nos acompanhem pelas redes sociais.</div>
         <div class="ho-imgmateria"> </div>
@@ -65,7 +174,6 @@
 <div class="ho-caixaazul">
 
 <div class="ho-cards">
-
         <div class="ho-imgtitulo">
             <h3 id="ho-titulo-cards">MEMBROS</h3>  
                 <div class="ho-cxazul">
@@ -111,8 +219,11 @@
 
 <!--fim dos cards de acesso-->
 
-
-<!--parte  dos patrocinadores-->
+ <!--script do carrosel-->
+        <script src="../src/scripts/home.js"></script>
+        <!--fim script do carrosel-->
+    </main>
+    <!--parte  dos patrocinadores-->
 
 <h3 id="faixaazul">Colaboradores e Patrocinadores</h3>
         <div class="ho-faixaazul">
@@ -144,14 +255,54 @@
         </div>
 <!--fim  da parte dos patrocinadores-->
 
-
-
- <!--script do carrosel-->
-        <script src="../src/scripts/home.js"></script>
-        <!--fim script do carrosel-->
-    </main>
-
     <!--colar o footer padrão-->
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <div class="footer-title"><a href=""></a><b>AgrisLab</b></div>
+            <div class="footer-options">
+
+                <b><a href="home.html">Home</a></b>
+                <b><a href="sobre.html">Sobre</a></b>
+                <b><a href="membros.html">Membros</a></b>
+                <b><a href="projetos.html">Projetos</a></b>
+                <b><a href="vagas.html">Vagas</a></b>
+                <b><a href="publicacoes.html">Feed</a></b>
+                <b><a href="noticias.html">Notícias</a></b>
+                <b><a href="contato.html">Contato</a></b>
+
+            </div>
+            <hr>
+            <div class="infos">
+                <div class="dev-team">
+                    <p>©2025 Nighthawks. All rights reserved.</p>
+                </div>
+                <div class="social-midia">
+                    <a href=""><img src="../src/assets/image/linkedin.png" alt=""></a>
+                    <a href=""><img src="../src/assets/image/instagram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="responsive-footer">
+    
+        <div class="infos">
+            <div class="footer-title"><a href="#"></a><b>AgrisLab</b></div>
+            <hr>
+            <div class="footer-bottom">
+            <div class="dev-team">
+                <p>©2025 Nighthawks. <br> All rights reserved.</p>
+            </div>
+            </div>
+            <div class="responsive-social">
+            <div class="social-midia">
+                <a href="#" class="linkedin2"><img src="../src/assets/image/linkedin.png" alt=""></a>
+                <a href="#" class="instagram2"><img src="../src/assets/image/instagram.png" alt=""></a>
+            </div>
+        </div>
+        </div>
+
+        </label>
+    </div>
 </body>
 </html>

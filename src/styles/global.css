@@ -1,161 +1,204 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
- --font: "PT Sans", sans-serif;
+  --font: "PT Sans", sans-serif;
 }
 
-:root{
-    --color-1: #2F4F4F;
-    --color-2: #ffffff;
-    --color-3: #000000;
-    --color-4: #efecec;
-    --color-5: #245C4D;
+:root {
+  --color-1: #2F4F4F;
+  --color-2: #ffffff;
+  --color-3: #000000;
+  --color-4: #efecec;
+  --color-5: #245C4D;
+  --color-6: #0574BB;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   
-  /* 2. Remove default margin */
-  * {
-    margin: 0;
-  }
-  
-  /* 3. Enable keyword animations */
-  @media (prefers-reduced-motion: no-preference) {
-    html {
-      interpolate-size: allow-keywords;
-    }
-  }
-  
-  body {
-    /* 4. Add accessible line-height */
-    line-height: 1.5;
-    /* 5. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
+}
 
-    font-family: var(--font);
-    min-height: 100vh;
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
   }
-  
-  /* 6. Improve media defaults */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  /* 7. Inherit fonts for form controls */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /* 8. Avoid text overflows */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /* 9. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
-  
-  /*
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
     10. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
-  header{
-    padding-top: 10px;
-    width: 100%;
-  }
-  .content-header{
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    margin-left: 15%;
-  }
-  .options{
-    flex: 9;
-    display: flex;
-    justify-content: space-around;
-  }
-  .logo{
-    flex: 1;
-    height: 70px;
-    background-image: url(../assets/image/Logo.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+#root,
+#__next {
+  isolation: isolate;
+}
 
-  .box{
-    flex: 1;
-    height: 100%; 
-  }
-  header a{
-    flex: 1;
-    text-decoration: none;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  .selected-box{
-    flex: 1;
-    height: 100%;
-  }
-  .selected-box a{
-    background-color: var(--color-1);
-    color: var(--color-2);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
+main {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30px;
+  flex: 1;
+}
 
-  .box a{
-    background-color: var(--color-2);
-    color: var(--color-3);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  .content-header hr{
-    height: 50px;
-    width: 2px;
-    border: none;
-    background-color: var(--color-1);
-    margin-top: 12px;
-  }
-  .center{
-    display: flex;
-    justify-content: center;
-  }
-  .center hr{
-    margin-top: 10px;
-    width: 90px;
-    height: 2px;
-  }
+header {
+  padding-top: 10px;
+  width: 100%;
+}
 
-  .box .center hr{
-    display: none;
-    margin-top: 10px;
-    width: 90px;
-    height: 2px;
-  }
+.content-header {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
+}
 
-  .footer{
-    background-color: var(--color-1);
-    position: relative;
-    bottom:0%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.options {
+  flex: 9;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  flex: 1;
+  height: 70px;
+  background-image: url(../assets/image/Logo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box {
+  flex: 1;
+  height: 100%;
+}
+
+header a {
+  flex: 1;
+  text-decoration: none;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.selected-box {
+  flex: 1;
+  height: 100%;
+}
+
+.selected-box a {
+  background-color: var(--color-1);
+  color: var(--color-2);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.box a {
+  background-color: var(--color-2);
+  color: var(--color-3);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.content-header hr {
+  height: 50px;
+  width: 2px;
+  border: none;
+  background-color: var(--color-1);
+  margin-top: 12px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center hr {
+  margin-top: 10px;
+  width: 90px;
+  height: 2px;
+}
+
+.box .center hr {
+  display: none;
+  margin-top: 10px;
+  width: 90px;
+  height: 2px;
+}
+
+.footer {
+  background-color: var(--color-1);
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Footer básico */
@@ -166,41 +209,47 @@ footer {
   color: var(--color-2);
 }
 
-.dev-team{
+.dev-team {
   text-align: left;
 }
 
-.infos{
+.infos {
   display: flex;
   width: 80%;
   justify-content: space-between;
   margin-bottom: 15px;
   margin-top: 10px;
 }
-.social-midia{
+
+.social-midia {
   display: flex;
   justify-content: space-between;
   width: 5%;
 }
-.footer hr{
+
+.footer hr {
   width: 80%;
 }
-.footer-options a{
+
+.footer-options a {
   text-decoration: none;
   color: var(--color-2);
 }
-.footer-options{
+
+.footer-options {
   display: flex;
-justify-content: space-between;
-width: 30%;
-margin-bottom: 8px;
-margin-top: 5px;
+  justify-content: space-between;
+  width: 30%;
+  margin-bottom: 8px;
+  margin-top: 5px;
 }
-.footer-title{
+
+.footer-title {
   font-size: 20px;
   margin-top: 15px;
 }
-.dropdown-content{
+
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: var(--color-4);
@@ -212,12 +261,14 @@ margin-top: 5px;
   z-index: 3;
 
 }
-.box:hover .dropdown-content{
+
+.box:hover .dropdown-content {
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: start;
 }
+
 .selected-box:hover .dropdown-content {
   display: flex;
   flex-direction: column;
@@ -225,35 +276,50 @@ margin-top: 5px;
   align-items: start;
   margin-top: -12px;
 }
-.dropdown-content a{
+
+.dropdown-content a {
   background-color: var(--color-4);
   padding-top: 5px;
   padding-bottom: 5px;
   color: var(--color-3);
 }
-.box a:hover{
+
+.box a:hover {
   background-color: var(--color-5);
   color: var(--color-2);
 }
-.dropdown-content a:hover{
+
+.dropdown-content a:hover {
   background-color: var(--color-4);
   color: var(--color-3);
 }
 
-.responsive-menu{
+.responsive-menu {
   display: none;
 }
 
-.responsive-footer{
+.responsive-footer {
   display: none;
+}
+
+@media (max-width: 1650px) {
+  .footer-options{
+    width: 40%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .footer-options{
+    width: 60%;
+  }
 }
 
 @media (max-width: 900px) {
-  header{
+  header {
     display: none;
   }
 
-  .responsive-menu{
+  .responsive-menu {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -269,7 +335,7 @@ margin-top: 5px;
     max-width: 30px;
     height: 25px;
     position: relative;
-    margin: 20px 20px 0 0 ;
+    margin: 20px 20px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -279,7 +345,7 @@ margin-top: 5px;
   .menu-icon span {
     transition: transform 0.3s ease;
     height: 4px;
-    background-color: var(--color-3);
+    background-color: var(--color-1);
     border-radius: 2px;
   }
 
@@ -293,17 +359,18 @@ margin-top: 5px;
     transition: max-height 0.4s ease-in-out;
   }
 
-  #menu-toggle:checked ~ .menu {
-    max-height: 450px; 
+  #menu-toggle:checked~.menu {
+    max-height: 450px;
+    padding-bottom: 20px;
   }
 
-  #menu-toggle:checked ~ .menu-icon span {
+  #menu-toggle:checked~.menu-icon span {
     background-color: var(--color-2);
     opacity: 0;
-    
+
   }
 
-  #menu-toggle:checked ~ .menu-icon{
+  #menu-toggle:checked~.menu-icon {
     transition: transform 0.3s ease;
     background-image: url(../assets/svg/xmark-solid-full.svg);
     background-size: contain;
@@ -314,44 +381,44 @@ margin-top: 5px;
 
 
   .mbl-dropdown-content {
-    display: none; 
-    flex-direction: column; 
+    display: none;
+    flex-direction: column;
   }
-  
-  #AgriRSLab-menu:checked ~ .mbl-dropdown-content {
-    display: flex; 
+
+  #AgriRSLab-menu:checked~.mbl-dropdown-content {
+    display: flex;
   }
 
   .menu-AgriRSLab .icon-arrow {
     transition: transform 0.3s ease;
-    display: inline-block; 
+    display: inline-block;
   }
 
-  #AgriRSLab-menu:checked + label .icon-arrow {
+  #AgriRSLab-menu:checked+label .icon-arrow {
     transform: rotate(180deg);
   }
 
-  #Publicacoes-menu:checked + label .icon-arrow {
+  #Publicacoes-menu:checked+label .icon-arrow {
     transform: rotate(180deg);
   }
-  
-  
 
 
-  #AgriRSLab-menu{
+
+
+  #AgriRSLab-menu {
     display: none;
   }
 
-  #Publicacoes-menu:checked ~ .mbl-dropdown-content {
-    display: flex; 
+  #Publicacoes-menu:checked~.mbl-dropdown-content {
+    display: flex;
   }
 
 
-  #Publicacoes-menu{
+  #Publicacoes-menu {
     display: none;
   }
 
-  .menu-AgriRSLab{
+  .menu-AgriRSLab {
     color: var(--color-2);
     font-size: 20px;
     display: flex;
@@ -381,12 +448,12 @@ margin-top: 5px;
     transition: color 0.3s;
   }
 
-  .menu hr{
+  .menu hr {
     width: 90%;
     margin-left: 5%;
   }
 
-  .mbl-dropdown-content{
+  .mbl-dropdown-content {
     display: none;
     background-color: var(--color-5);
     z-index: 3;
@@ -396,12 +463,13 @@ margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
 
-  .space{
+
+  .space {
     flex: 10;
   }
-  .logo{
+
+  .logo {
     flex: 3;
     width: 70px;
     height: 70px;
@@ -414,7 +482,8 @@ margin-top: 5px;
     margin-top: 10px;
     margin-left: 20px;
   }
-  .icon-arrow{
+
+  .icon-arrow {
     width: 20px;
     height: 20px;
     background-size: contain;
@@ -425,81 +494,82 @@ margin-top: 5px;
   .icon-arrow {
     transition: transform 0.3s ease;
   }
-  
-  
 
 
-  footer{
+
+
+  footer {
     display: none;
   }
 
-  .responsive-footer{
+  .responsive-footer {
     display: flex;
   }
- 
-  .responsive-footer .infos{
+
+  .responsive-footer .infos {
     background-color: var(--color-5);
     color: #ffffff;
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;  
+    justify-content: space-between;
     align-items: center;
-    padding: 5px
+    padding: 5px;
+    margin-bottom: 0px;
   }
 
 
-  .footer-title{
+  .footer-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: center;
     width: 100%;
-}
-
-hr {
-  width: 80%;
-  border: 1px solid var(--color-2);
-  margin-left: ;
-
-}
-
-.footer-bottom {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0 auto
-}
-
-.social-midia {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  width: auto;
-  position: relative;
-  top: -30px; 
-}
-
-.responsive-social{
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
- margin-right: 80px;
- 
-}
-
-.infos .dev-team{
-  margin-left: 5%;
-  margin-top: 20px;
-}
-.dev-team br{
-  display: none;
-}
-
-}
-@media (max-width: 500px) {
-    .dev-team br{
-      display: flex;
-    }
   }
+
+  hr {
+    width: 80%;
+    border: 1px solid var(--color-2);
+  }
+
+  .footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0 auto
+  }
+
+  .social-midia {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: auto;
+    position: relative;
+    top: -30px;
+  }
+
+  .responsive-social {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 80px;
+
+  }
+
+  .infos .dev-team {
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+
+  .dev-team br {
+    display: none;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .dev-team br {
+    display: flex;
+  }
+}

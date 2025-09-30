@@ -19,7 +19,6 @@ hr{
 #va-title__info>p{
     margin-bottom: 0;
     margin-top: 5px;
-    margin-left: 2%;
 }
 
 #va-title__info-nav{
@@ -67,60 +66,28 @@ hr{
 }
 
 
-/*Break-Point 1600*/
-@media (max-width: 1600px){
-    #va-title>h1{
-        font-size: 2.6vw;
-    }
-
-    #va-title__info>p{
-        margin-left: 80px;
-    }
-}
-
-/*Break-Point 1500*/
-@media (max-width: 1500px){
-    .va-content__block-desc{
-        font-size: 1.3vw;
-    }
-    .va-content__block-date{
-        font-size: 1.2vw;
-    }
-}
-
-/*Break-Point 1400*/
-@media (max-width: 1400px){
-    #va-title__info>p{
-        margin-left: 100px;
-    }
-
+/*Break-Point 1800*/
+@media (max-width: 1800px){
     #va-title>h1{
         font-size: 45px;
     }
-}
-
-/*Break-Point 1200*/
-@media (max-width: 1200px){
+    .va-content__block{
+        height:fit-content;
+        margin-bottom: 30px;
+    }
+    .va-content__block-title{
+        font-size: 25px;
+    }
     .va-content__block-desc{
-        font-size: 1.5vw;
+        font-size: 20px;
     }
     .va-content__block-date{
-        font-size: 1.4vw;
-    }
-}
-
-/*Break-Point 1000*/
-@media (max-width: 1000px){
-    .va-content__block-desc{
-        font-size: 1.8vw;
-    }
-    .va-content__block-date{
-        font-size: 1.7vw;
+        font-size: 18px;
     }
 }
 
 /*Break-Point 800*/
-@media (max-width: 800px){
+@media (max-width: 800px){ 
     #va-title>h1{
         font-size: 40px;
     }
@@ -129,33 +96,25 @@ hr{
         display: none;
     }
 
-    #va-title__info>p{
-        margin-left: 130px;
-    }
-    
-    .va-content__block{
-        margin-bottom: 20px;
-    }
-
     #va-title__info-nav{
         justify-content: center;
     }
 
     .va-content__block-desc{
-        font-size: 2.1vw;
+        font-size: 20px;
     }
     .va-content__block-date{
-        font-size: 1.9vw;
+        font-size: 18px;
     }
 }
 
 /*Break-Point 700*/
 @media (max-width: 700px){
     .va-content__block-desc{
-        font-size: 2.4vw;
+        font-size: 20px;
     }
     .va-content__block-date{
-        font-size: 2.3vw;
+        font-size: 18px;
     }
 }
 
@@ -165,52 +124,50 @@ hr{
         font-size: 35px;
     }
 
-    #va-title__info>p{
-        margin-left: 100px;
-    }
-
-    .va-content__block{
-        margin-bottom: 40px;
-    }
-    
     #va-title__info-nav{
         width: 30%;
         justify-content: center;
-    }
-
-    .va-content__block-desc{
-        font-size: 2.6vw;
-    }
-    .va-content__block-date{
-        font-size: 2.5vw;
-    }
-}
-
-/*Break-Point 500*/
-@media (max-width: 500px){
-    .va-content__block-desc{
-        font-size: 3.2vw;
-        margin-bottom: 10px;
-    }
-    .va-content__block-date{
-        font-size: 3vw;
     }
 }
 
 /*Break-Point 400*/
 @media (max-width: 400px){
+    
     #va-title>h1{
         font-size: 35px;
     }
     #va-title__info>p{
-        font-size: 3.5vw;
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    .va-content__block-title{
+        font-size: 25px;
+    }
+    .va-content__block-date{
+        font-size: 15px;
+    }
+}
+
+/*Break-Point 300*/
+@media (max-width: 300px){
+    #va-title>h1{
+        font-size: 33px;
+    }
+
+    #va-title__info>p{
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .va-content__block-title{
+        font-size: 25px;
     }
 
     .va-content__block-desc{
-        font-size: 3.2vw;
+        font-size: 18px;
         margin-bottom: 10px;
     }
     .va-content__block-date{
-        font-size: 3vw;
+        font-size: 16px;
     }
 }

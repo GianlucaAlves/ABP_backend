@@ -124,3 +124,22 @@ button{
 .co-form-left p{
     margin-bottom: 10px;
 }
+@media (max-width: 900px){
+    .co-form-content{
+        flex-direction: column;
+        height: auto;
+        background-color: #00000000;
+        width: 100%;
+        margin: 0;
+    }
+    .co-form-left{
+        width: 100%;
+    }
+    .co-form-right{
+        width: 100%;
+    }
+    .co-social-media{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

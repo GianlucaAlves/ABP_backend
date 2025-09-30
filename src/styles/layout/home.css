@@ -1,37 +1,31 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
+:root {
+  --color-1: #2F4F4F;
+  --color-2: #ffffff;
+  --color-3: #000000;
+  --color-4: #efecec;
+  --color-5: #245C4D;
+  --color-6: #0574BB;
 }
 
-body {
-  background-color: #ffffff;
-  color: #333;
-  line-height: 1.6;
-  padding: 1rem;
-}
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-}
 
 .ho-carrosel{
     margin: 0 auto;
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: 700px;
     overflow: hidden;
 }
 
 
 .ho-slides{
     width: 400%;
-    height: 400px;
+    height: 700px;
     display: flex;
 }
 
-
+.ho-title{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .ho-slides input{
     display: none;
 }
@@ -40,7 +34,7 @@ main {
    background-image: url("../../assets/image/pc_home_carrosel1.webp");
    background-size: cover;
    background-repeat: no-repeat;
-   width: 800px;
+   width: 25%;
    position: relative;
 }
 
@@ -48,7 +42,7 @@ main {
    background-image: url("../../assets/image/pc_home_carrosel2.webp");
    background-size: cover;
    background-repeat: no-repeat;
-   width: 800px;
+   width:25%;
    position: relative;
 }
 
@@ -56,7 +50,7 @@ main {
    background-image: url("../../assets/image/pc_home_carrosel3.webp");
    background-size: cover;
    background-repeat: no-repeat;
-  width: 800px;
+  width: 25%;
    position: relative;
 }
 
@@ -64,14 +58,14 @@ main {
    background-image: url("../../assets/image/pc_home_carrosel4.webp");
    background-size: cover;
    background-repeat: no-repeat;
-  width: 800px;
+    width:25%;
    position: relative;
 }
 
 .ho-manual-navigation{
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    width:80%;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -128,8 +122,8 @@ main {
 
 .ho-navigation-auto{
     position: absolute;
-    width: 800px;
-    margin-top: 360px;
+    width: 80%;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     
@@ -170,19 +164,20 @@ h4{
 
 .ho-materia{
     display: flex;
+    justify-content: space-between;
 }
 
 .ho-txtomateria{
-    flex: 1;
-    font-size: 15px;
+    width: 40%;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
 }
 
 .ho-imgmateria{
-   flex: 1; 
+    width: 40%;
    background-image: url("../../assets/image/pc_home_gado.webp");
-   background-size: contain;
+   background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
@@ -190,19 +185,26 @@ h4{
 
 .ho-cards{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .ho-imgtitulo{
+    width: 20%;
+    align-items: center;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+
   }
 
 
-
 .ho-cxazul{
-  width: 170px;
-    height: 200px;
+  width: 100%;
+    height: 300px;
     margin: 5px;
     background-color: #0574BB;
     border-radius: 10% ;
-
-
 }
 
 .ho-txt-cxazul{
@@ -211,6 +213,8 @@ h4{
     font-size: 9px;
     padding: 5px;
     text-align: center;
+    flex: 1;
+    height: 40%;
 }
 
 
@@ -221,8 +225,8 @@ h4{
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 170px;
-   height: 120px;
+   width: 100%;
+   height: 60%;
    border-radius: 10% 10% 0% 0%;
   
 }
@@ -233,8 +237,8 @@ h4{
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 170px;
-   height: 120px;
+   width: 100%;
+   height: 60%;
     border-radius: 10% 10% 0% 0%;
 
 }
@@ -245,8 +249,8 @@ h4{
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 170px;
-   height: 120px;
+   width: 100%;
+   height: 60%;
     border-radius: 10% 10% 0% 0%;
 }
 
@@ -256,8 +260,8 @@ h4{
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   width: 170px;
-   height: 120px;
+   width: 100%;
+   height: 60%;
     border-radius: 10% 10% 0% 0%;
 
 }
@@ -277,12 +281,13 @@ h4{
    background-color: #0574BB;
    padding: 10px 10px;
    font-family: Arial, Helvetica, sans-serif;
-
+    text-align: center;
 }
 
 .ho-faixaazul{
     background-color: #0574BB;
     display: flex;
+    justify-content: space-evenly;
 
     
 }
@@ -360,5 +365,33 @@ h4{
    background-position: center;
    background-repeat: no-repeat;
    border-radius: 50%;
+
+}
+
+@media (max-width: 800px) {
+    .main, .ho-carrosel, .ho-carrosel-img1, .ho-carrosel-img2, .ho-carrosel-img3, .ho-carrosel-img4, .ho-navigation-auto, .ho-manual-navigation  {
+        width: 800px;
+}
+
+}
+
+@media (max-width: 700px) {
+    .main, .ho-carrosel, .ho-carrosel-img1, .ho-carrosel-img2, .ho-carrosel-img3, .ho-carrosel-img4, .ho-navigation-auto, .ho-manual-navigation  {
+        width: 700px;
+}
+
+}
+
+@media (max-width: 600px) {
+    .main, .ho-carrosel, .ho-carrosel-img1, .ho-carrosel-img2, .ho-carrosel-img3, .ho-carrosel-img4, .ho-navigation-auto, .ho-manual-navigation  {
+        width: 600px;
+}
+
+}
+
+@media (max-width: 500px) {
+    .main, .ho-carrosel, .ho-carrosel-img1, .ho-carrosel-img2, .ho-carrosel-img3, .ho-carrosel-img4, .ho-navigation-auto, .ho-manual-navigation  {
+        width: 500px;
+}
 
 }

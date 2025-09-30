@@ -1,4 +1,4 @@
-/*Bloco Titulo*/
+pub/*Bloco Titulo*/
 #va-title{
     margin-top: 5vh;
 }
@@ -7,17 +7,12 @@ hr{
     justify-self: center;
     margin-top: 5px;   
 }
-#va-title>h1 {
-    color: var(--color-1);
-    margin-left: 18%;
-    margin-bottom: 0;
-    font-size: 2.5vw;
-}
+
 
 #va-title__info{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: end;
 }
 
@@ -28,13 +23,12 @@ hr{
 }
 
 #va-title__info-nav{
-    width: 300px;
+    width: 200px;
     display: flex;
+    justify-content: space-between;
 }
 
-#va-title__info-nav>span{
-    margin-right: 5%;
-}
+
 #va-title__info-nav>span>img{
     color: #2F4F4F;
 }
@@ -42,7 +36,7 @@ hr{
 /*Bloco conteúdo*/
 #va-content{
     margin-top: 3%;
-    margin-left: 18%;
+
 }
 .va-content__block{
     height: 100px;

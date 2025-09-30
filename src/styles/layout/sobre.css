@@ -4,17 +4,6 @@
     box-sizing: border-box
 }
 
-body {
-  background-color: #ffffff;
-  color: #333;
-  line-height: 1.6;
-  padding: 1rem;
-}
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-}
 section {
     margin-bottom: 2rem;
 }

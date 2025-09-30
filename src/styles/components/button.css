@@ -1,0 +1,13 @@
+.main-buttons-pos{
+    display:flex;
+    margin-left: 70rem;
+    gap:10px;
+}
+.main-buttons{
+    border-radius: 25px;
+    background: #0574BB;
+    padding: 8px;
+    border:none;
+    cursor:pointer;
+    color:white;
+}

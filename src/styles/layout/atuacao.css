@@ -18,16 +18,17 @@ hr {
 }
 .atu-images {
   display: flex;
-  justify-content: center;    /* centraliza horizontalmente */
+  justify-content: space-evenly;    /* centraliza horizontalmente */
   gap: 30px;                  
   text-align: center;
+  width: 50%;
 }
 
 .atu-images  div {
   display: flex;
   flex-direction: column;      /* empilha a imagem, título e checkbox */
   align-items: center;         /* centraliza horizontalmente */
-  width: 220px;                
+  width: 220px;              
 }
 
 
@@ -73,6 +74,10 @@ hr {
 div #fenologia{
   margin-top: 5%;
 } 
+
+div #estimativas{
+  margin-left: 20px;
+}
  
   .btn-name{
     text-decoration: none;
@@ -149,3 +154,25 @@ width: 100px;
 height: 40px;
 }
 
+.atu-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+.atu-container{
+  flex-direction: column;
+  justify-content: center;
+}
+.atu-images{
+  width: 100%;
+}
+}
+
+@media (max-width: 900px) {
+  .atu-images{
+    display: grid;
+  }
+  
+  }

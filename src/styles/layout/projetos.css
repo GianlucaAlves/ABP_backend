@@ -5,29 +5,33 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .pr-line {
     width:80%;
     height:1px;
     background-color:black;
-   
     margin-bottom: 1rem;
     border-radius: 2px;
     box-sizing: border-box;
 }
 form{
     height: fit-content;
+    max-width: 100%;
     width:100%;
-    max-width: 70rem;
     background-color: #0574BB1A;
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    
+    
 }
 #palavra-chave{
-    width:50%;
+    width:600px;
     border-radius: 25px;
     background-color: #245C4D4D;
     border-color: #2F4F4F;
@@ -38,18 +42,22 @@ form{
 }
 fieldset{
     border:none;
-    margin-top: 2rem;    
+    margin-top: 2rem;  
     display: flex;
-    justify-content: space-between;
-    max-width: 70rem;
+    justify-content: center;
     width: 100%;
-}
+    box-sizing: border-box;
+    flex-wrap:wrap;
+    align-items: center;
+ }
+
 legend {
     margin-right: 20px;
     float:left;
 }
 .pr-filters{
-    margin-right: 2rem;
+    margin: 1rem;
+    justify-content: center;
     border-radius:25px;
     background-color: #2F4F4F;
     color:white;
@@ -78,7 +86,7 @@ legend {
 
 .search-button {
   position: absolute; 
-  right: 51%; 
+  right: 3%; 
   top: 50%;
   transform: translateY(-50%); 
   background: transparent;
@@ -95,9 +103,10 @@ legend {
 .search-button:hover svg {
   color: #007bff; 
 }
+
 #aplicar{
-    max-width: 8rem;
-    width:100%;
+    max-width: 100%;
+    width:200px;
     padding:3px;
     background-color:#0574BB;
     border-radius: 25px;
@@ -105,13 +114,15 @@ legend {
     border:none;
     cursor: pointer;
     height:32px;
+    
+    
 }
 section{
     justify-content: center;
     align-items: center;
     padding: 20px;   
     width:100%;
-    justify-items: center;
+    
 }
 article{
     width:100%;
@@ -160,6 +171,10 @@ a {
 }
 
 @media (max-width: 900px) {
+    section {
+        display:grid;
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
     form {
         flex-direction: column;
         align-items: center;
@@ -197,16 +212,21 @@ a {
         display:none;
     }
     fieldset {
-        flex-direction: row;
-        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
         gap:10px;
+        width:100%;
     }
-    .pr-filters, #palavra-chave, #nomeprojeto, #aplicar {
-        width: auto;
-        max-width: 100%;
+    .pr-filters{
+        
+        max-width: 90%;
         margin-bottom: 10px;
-        flex: 1 1 auto;
+        
+    }
+    #palavra-chave{
+        width: 100%;
     }
     .search-box {
         flex-direction: row;
@@ -231,13 +251,26 @@ a {
         cursor:pointer;
         padding:0;
     }
+    #aplicar{
+        
+        justify-content: center;
+        margin-left: 0;
+    }
 }
+
+
+
 @media (max-width:300px){
+    section {
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
     .article-text{
         font-size: 0.6rem;
     }
     form {
         font-size: 0.6rem;
     }
+    
 }
 

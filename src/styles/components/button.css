@@ -1,6 +1,6 @@
 .main-buttons-pos{
     display:flex;
-    margin-left: 70rem;
+    margin-left: 70%;
     gap:10px;
 }
 .main-buttons{
@@ -10,4 +10,9 @@
     border:none;
     cursor:pointer;
     color:white;
+}
+@media (max-width:900px){
+    .main-buttons-pos{
+        margin: 0 auto;
+    }
 }

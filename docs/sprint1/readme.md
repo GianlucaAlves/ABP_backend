@@ -1,11 +1,9 @@
 # ABP 1º Semestre DSM
 
-# Desenvolvimento de um website para o laboratorio de Sensoriamento Remoto Agrícola do INPE -AgriRS Lab 
-
 # Documentação - Sprint 1
 
 <p align="center">
-      <img src="../../img/nhdevlogo.png" alt="logo da Nighthawks Tech" width="200">
+      <img src="./src/assets/image/nhdevlogo.png" alt="nighthawks" width="200px">
       <h2 align="center"> NightHawks</h2>
 </p>
 
@@ -15,22 +13,21 @@
   <a href ="#dor">DoR</a>  |
   <a href ="#dod">DoD</a>  |
   <a href ="#equipe"> Equipe</a> |
+<a href ="#burndown"> Burndown</a>
 </p>
 
 > Status da Sprint: Em andamento ⏳
 
 
 ##  Desafio <a id="desafio"></a>
--- **ATUALIZAR**--
 
-Desenvolver a Home Page responsiva de um site institucional do INPE, incluindo componentes principais reutilizáveis, seguindo um design fornecido.
+Desenvolver a Home Page responsiva de um site institucional do INPE seguindo um design fornecido. Organização de metodologia de trabalho, pastas, GitHub e padronização. Utilização de FIGMA, HTML, CSS.
 
 ##  Backlog e progresso <a id="us"></a>
 
 | Backlog ID | Tipo do item | Descrição                                             | Prioridade | Especifidades                                                                                                                                                                                                                                                                                                    | Pontuação | Status    | Código | Link | Prazo    | Atribuídos                                                                        |
 |------------|--------------|-------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-----------|--------|------|----------|-----------------------------------------------------------------------------------|
 | RNF01      | DESIGN       | SELEÇÃO DE COR BASE DO SITE                           | Urgente    | Identidade visual com referencias de cor e designer                                                                                                                                                                                                                                                              | 1         | ✅         | DD-001 |<a href="https://www.figma.com/proto/9wDsKiqDqGBAP3EbZZZpIE/ABP01---INPE?node-id=42-2&t=VVGvKLjAo0fiwuLC%E2%80%A6" target="_blank">Figma</a>
-| 16/09/25 | Lucas Cobra, Victor,                                                              |
 | RNF01      | DESIGN       | CRIAÇÃO PAGINA BASE                                   | Urgente    | Criar página base com header e footer que serão utilizados como padrão para todas as páginas seguintes                                                                                                                                                                                                           | 3         | ✅         | DD-002 |<a href="https://www.figma.com/proto/9wDsKiqDqGBAP3EbZZZpIE/ABP01---INPE?node-id=42-2&t=VVGvKLjAo0fiwuLC%E2%80%A6" target="_blank">Figma</a>      | 17/09/25 | Allan, Gianluca, Guilherme, Lucas Cecon, Lucas Cobra, Nikolas, Victor, Thiasley,  |
 | RNF01      | FRONTEND     | CRIAÇÃO PAGINA BASE                                   | Urgente    | Criar uma página base com o header e footer que servirá de padrão para todas as páginas seguintes                                                                                                                                                                                                                | 5         | ✅         | DW-001 |      | 19/09/25 | Guilherme, Victor,                                                                |
 | RF01       | DESIGN       | CRIAÇÂO DE UMA PAGINA HOME                            | Urgente    | Criar uma página home OBRIGATÓRIAMENTE contendo cards de notícias, projeto, publicações ou outras atualizações, colaboradores, descrições sobre o INPE e o laboratório e previews das demais páginas.                                                                                                            | 5         | ✅         | DD-003 |<a href="https://www.figma.com/proto/9wDsKiqDqGBAP3EbZZZpIE/ABP01---INPE?node-id=42-2&t=VVGvKLjAo0fiwuLC%E2%80%A6" target="_blank">Figma</a>      | 19/09/25 | Lucas Cobra,                                                                      |
@@ -86,10 +83,17 @@ Desenvolver a Home Page responsiva de um site institucional do INPE, incluindo c
 |                 Critério                 | Descrição                                                                            |
 | :--------------------------------------: | ------------------------------------------------------------------------------------ |
 |     Implementação Fiel                   | Interface criada conforme protótipo.                                                 |
-|     Responsividade OK                    | Funciona em desktop, tablet e mobile.                                                |
-|          Revisão e Deploy                | Código revisado, aprovado e build sem erros.                                         |
+|     Responsividade                     | Funciona em desktop, tablet e mobile.                                                |
+|       Revisão e Deploy                | Código revisado, aprovado e build sem erros.                                         |
 |     Código Padronizado                   | Segue boas práticas e padrões do time.                                               |
 
+##  Burndown Chart 📉🔥 <a id="burndown"></a>
+
+-- **INSERIR IMAGEM** --
+
+
+
+--- 
 
 ## 🎓 Equipe <a id="equipe"></a>
 
@@ -142,12 +146,6 @@ Desenvolver a Home Page responsiva de um site institucional do INPE, incluindo c
       <td>Lucas Cobra</td>
       <td>Desenvolvedor</td>
       <td><a href="https://github.com/LucasCobraFatec"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-    <tr>
-      <td>Thiasley</td>
-      <td>Desenvolvedor</td>
-      <td><a href=""><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
   </table>

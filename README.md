@@ -94,8 +94,13 @@ As soluções esperadas incluem o desenvolvimento de um site moderno, responsivo
 | **RNF06** | Seguir a identidade visual definida com os integrantes do laboratório.     |
 
 
----
 
+## 💡 Casos de Uso <a id="backlog"></a>
+
+> [Arquivo caso de uso ⚙️](docs/casodeuso_1_0_uml.asta)
+>
+
+---
 ## 📋 Backlog do Produto <a id="backlog"></a>
 
 
@@ -113,7 +118,7 @@ As soluções esperadas incluem o desenvolvimento de um site moderno, responsivo
 <h4>TASKS por Sprint<h4> 
 
 
-> [Sprint 1 Tasks] 
+> [Sprint 1 Tasks](./docs/sprint1/tasks.md)
 >
 > [Sprint 2 Tasks]   
 > 

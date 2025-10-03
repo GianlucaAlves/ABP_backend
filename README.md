@@ -97,7 +97,7 @@ As soluções esperadas incluem o desenvolvimento de um site moderno, responsivo
 
 ## 💡 Casos de Uso <a id="backlog"></a>
 
-> [Arquivo caso de uso ⚙️] (link pasta)
+> [Arquivo caso de uso ⚙️](docs/casodeuso_1_0_uml.asta)
 >
 
 ---

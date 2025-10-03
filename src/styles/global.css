@@ -71,6 +71,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  text-align: justify;
 }
 
 /* 9. Improve line wrapping */

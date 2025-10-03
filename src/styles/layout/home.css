@@ -341,6 +341,7 @@ h4 {
 
 
 #faixaazul {
+    margin-bottom: -2px;
     color: var(--color-2);
     background-color: var(--color-6);
     padding: 10px 10px;
@@ -435,6 +436,13 @@ h4 {
 
 }
 
+#ho-faixaazulmbl {
+    background-color: var(--color-6);
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
 /* SLIDES COLABORADORES */
 
 @media (max-width: 1120px) {
@@ -445,6 +453,12 @@ h4 {
 }
 
 @media (max-width: 900px) {
+
+    #ho-faixaazulmbl {
+    color: var(--color-2);
+    display: flex;
+    margin-bottom: -2px;
+}
 
     .ho-materia {
         flex-direction: column;

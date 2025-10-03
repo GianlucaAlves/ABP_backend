@@ -1,3 +1,7 @@
+.selected-box:hover .dropdown-content {
+  margin-top: -22px;
+}
+
 hr {
     width:70%;
     height:0%;

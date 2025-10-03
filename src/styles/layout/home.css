@@ -239,23 +239,34 @@ h4 {
     border-radius: 10px;
 }
 
-
-.ho-cards {
+.ho-caixaazul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* ou space-between, ajuste como preferir */
+    flex-wrap: wrap;
+    /* Permite que os cards quebrem para a linha de baixo em telas menores */
     margin-bottom: 20px;
 }
 
-.ho-imgtitulo {
-    width: 20%;
+.ho-card {
+    width: 22%;
+    /* Um pouco mais de espaço entre eles */
+    min-width: 250px;
+    /* Largura mínima para evitar que fiquem muito espremidos */
     margin: 10px;
-    align-items: center;
+    text-decoration: none;
+    /* Remove o sublinhado do link */
     display: flex;
-    justify-content: center;
     flex-direction: column;
-
 }
 
+.ho-titulo-cards {
+    /* MUDOU DE # PARA . */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0574BB;
+    text-align: center;
+    width: 100%;
+}
 
 .ho-cxazul {
     width: 100%;
@@ -330,18 +341,7 @@ h4 {
 
 }
 
-#ho-titulo-cards {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0574BB;
-    text-align: center;
-    width: 100%;
-}
-
-
-
-
 #faixaazul {
-    margin-bottom: -2px;
     color: var(--color-2);
     background-color: var(--color-6);
     padding: 10px 10px;
@@ -436,12 +436,14 @@ h4 {
 
 }
 
+
 #ho-faixaazulmbl {
     background-color: var(--color-6);
     display: none;
     justify-content: center;
     width: 100%;
 }
+
 
 /* SLIDES COLABORADORES */
 
@@ -455,10 +457,11 @@ h4 {
 @media (max-width: 900px) {
 
     #ho-faixaazulmbl {
-    color: var(--color-2);
-    display: flex;
-    margin-bottom: -2px;
-}
+        color: var(--color-2);
+        display: flex;
+        margin-bottom: -2px;
+    }
+
 
     .ho-materia {
         flex-direction: column;

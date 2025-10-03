@@ -3,11 +3,6 @@
 # Documentação - Sprint 1
 
 <p align="center">
-      <img src="./src/assets/image/nhdevlogo.png" alt="nighthawks" width="200px">
-      <h2 align="center"> NightHawks</h2>
-</p>
-
-<p align="center">
   | <a href ="#desafio"> Desafio</a>  |
   <a href ="#us"> Backlog</a>  |   
   <a href ="#dor">DoR</a>  |
@@ -16,7 +11,7 @@
 <a href ="#burndown"> Burndown</a>
 </p>
 
-> Status da Sprint: Em andamento ⏳
+> Status da Sprint: Finalizado ✅
 
 
 ##  Desafio <a id="desafio"></a>
@@ -90,9 +85,8 @@ Desenvolver a Home Page responsiva de um site institucional do INPE seguindo um 
 |     Código Padronizado                   | Segue boas práticas e padrões do time.                                               |
 
 ##  Burndown Chart 📉🔥 <a id="burndown"></a>
-<span></span>
 
-<p align="center">
+<p>
   <img src="docs/sprint1/BurnDown_sprint1_ABP-1.png" alt="BurnDown Sprint 1" width="400px" />
 </p>
 

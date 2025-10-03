@@ -86,8 +86,8 @@ Desenvolver a Home Page responsiva de um site institucional do INPE seguindo um 
 
 ##  Burndown Chart 📉🔥 <a id="burndown"></a>
 
-<p>
-  <img src="docs/sprint1/BurnDown_sprint1_ABP-1.png" alt="BurnDown Sprint 1" width="400px" />
+<p align="center">
+  <img src="BurnDownspr1.png" alt="BurnDown Sprint 1" width="400px" />
 </p>
 
 

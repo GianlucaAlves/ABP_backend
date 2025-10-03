@@ -259,7 +259,6 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   z-index: 3;
-
 }
 
 .box:hover .dropdown-content {
@@ -302,6 +301,83 @@ footer {
   display: none;
 }
 
+    .sw-switch {
+      position: absolute;
+      width: 90px;
+      height: 20px;
+      top: 10px;
+      margin-left: 87%;
+    }
+
+    .sw-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .sw-slider {
+      width: 90px;
+      height: 20px;
+      background-color: var(--color-1);
+      border-radius: 50px;
+      transition: background-color 0.4s;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      box-sizing: border-box;
+      font-size: 14px;
+      text-transform: uppercase;
+      position: relative; /* ← IMPORTANTE */
+    }
+    .sw-text-left{
+      opacity: 0;
+    }
+    .sw-text-left,
+    .sw-text-right {
+      color: var(--color-2);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .sw-circle {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      top: -5px;
+      left: 2px;
+      border-radius: 50%;
+      background-image: url('https://flagcdn.com/w40/br.png');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 5px #0005;
+      transition: transform 0.4s, background-image 0.4s;
+      z-index: 2;
+    }
+
+    input:checked + .sw-slider .sw-circle {
+      transform: translateX(56px);
+      background-image: url('https://flagcdn.com/w40/us.png');
+    }
+
+    .sw-text-right {
+      position: absolute;
+      right: 10px;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+
+    .sw-text-left {
+      transition: opacity 0.3s;
+    }
+
+    input:checked + .sw-slider .sw-text-left {
+      opacity: 1;
+    }
+
+    input:checked + .sw-slider .sw-text-right {
+      opacity: 0;
+    }
+
 @media (max-width: 1650px) {
   .footer-options{
     width: 40%;
@@ -315,6 +391,24 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .sw-switch {
+    width: 80%;
+    height: 20px;
+    top: 30px;
+    margin-left: 0%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .sw-text-left,
+  .sw-text-right {
+     color: var(--color-3);
+  }
+
+  .sw-slider {
+    background-color: var(--color-2);
+  }
+
   header {
     display: none;
   }
@@ -360,7 +454,7 @@ footer {
   }
 
   #menu-toggle:checked~.menu {
-    max-height: 450px;
+    max-height: 500px;
     padding-bottom: 20px;
   }
 
@@ -571,5 +665,11 @@ footer {
 @media (max-width: 500px) {
   .dev-team br {
     display: flex;
+  }
+}
+
+@media (max-width: 300px) {
+  .space{
+    flex: 4;
   }
 }

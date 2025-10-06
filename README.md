@@ -27,7 +27,7 @@
 >
 >[Pasta de Documentação](./docs) 📄
 > 
-> Video do Projeto:  [Youtube] 📽️
+📽️ [Vídeo do Projeto no YouTube](https://www.youtube.com/watch?v=bLmCPFcv2Is)
 
 ##  Desafio <a id="desafio"></a>
 
@@ -108,7 +108,7 @@ As soluções esperadas incluem o desenvolvimento de um site moderno, responsivo
 
 | Sprint | Ojetivos        | Documentação | Período| Status  | 
 |--------|-----------------|------|--------|---------- | 
-| 1      | HTML/Figma      | [Sprint 1 Docs](./docs/sprint1/readme.md)     |    15/09/25 - 03/09/25    |   ⏳ Em andamento        | 
+| 1      | HTML/Figma      | [Sprint 1 Docs](./docs/sprint1/readme.md)     |    15/09/25 - 03/10/25    |   ✔ Concluído    | 
 | 2      | Backend         |  [Sprint 2 Docs](./docs/sprint2/README.md)     |        |           | 
 | 3      | Backend/Ajustes |  [Sprint 3 Docs](docs/sprint3/README.md)    |        |           | 
 
@@ -151,11 +151,35 @@ As soluções esperadas incluem o desenvolvimento de um site moderno, responsivo
  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"></a>
  <a href="https://github.com/"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/></a>
  <a href="https://www.figma.com/"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/></a>
+      <a href="https://www.microsoft.com/pt-br/windows">
+  <img src="https://img.shields.io/badge/Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
+</a>
+<a href="https://code.visualstudio.com/">
+  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
+</a>
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+</a>
+<a href="https://trello.com/">
+  <img src="https://img.shields.io/badge/Trello-0079BF?style=for-the-badge&logo=trello&logoColor=white"/>
+</a>
+<a href="https://astah.net/">
+  <img src="https://img.shields.io/badge/Astah-000000?style=for-the-badge&logo=astah&logoColor=white"/>
+</a>
+<a href="https://www.microsoft.com/pt-br/microsoft-365/excel">
+  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
+</a>
+      <a href="https://git-scm.com/">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+</a>
 </h4>
 
 ## 📖 Manual de Instalação <a id="manual"></a>
 
 ### 🛠 Pré-requisitos
+
+- Windowns ([Download](https://go.microsoft.com/fwlink/?linkid=2171764))
+
 
 - Git ([Download](https://git-scm.com/downloads))
 
@@ -167,19 +191,15 @@ As soluções esperadas incluem o desenvolvimento de um site moderno, responsivo
 ### 1. Clonar o Repositório Principal
 --- **EM ANDAMENTO (Sujeito a alterações)** ---
 ```bash
-git clone https://github.com/
-cd 
+git clone https://github.com/NightHawksDevelopers/ABP-1.git
+cd ABP-1
 ```
 
 ---
 
 ### 2. Configuração do Backend
 
-**1°**
-
-**2°**
-
-**3°**
+> ⚠️ Este projeto é focado no front-end. A parte de backend será implementada futuramente.
 
 
 ```bash

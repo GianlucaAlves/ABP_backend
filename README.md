@@ -27,7 +27,9 @@
 >
 >[Pasta de Documentação](./docs) 📄
 > 
-📽️ [Vídeo do Projeto no YouTube](https://www.youtube.com/watch?v=bLmCPFcv2Is)
+> [Vídeo do Projeto no YouTube](https://www.youtube.com/watch?v=bLmCPFcv2Is) 📽️
+>
+> [FIGMA]
 
 ##  Desafio <a id="desafio"></a>
 
@@ -109,7 +111,7 @@ As soluções esperadas incluem o desenvolvimento de um site moderno, responsivo
 | Sprint | Ojetivos        | Documentação | Período| Status  | 
 |--------|-----------------|------|--------|---------- | 
 | 1      | HTML/Figma      | [Sprint 1 Docs](./docs/sprint1/readme.md)     |    15/09/25 - 03/10/25    |   ✔ Concluído    | 
-| 2      | Backend         |  [Sprint 2 Docs](./docs/sprint2/README.md)     |        |           | 
+| 2      | Backend         |  [Sprint 2 Docs](./docs/sprint2/README.md)     |   13/10/25 - 31/10/25     |  ⏳ Em andamento         | 
 | 3      | Backend/Ajustes |  [Sprint 3 Docs](docs/sprint3/README.md)    |        |           | 
 
 
@@ -234,10 +236,10 @@ Frontend rodando em `http://localhost:5173`.
       <th>Linkedin</th>
     </tr>
     <tr>
-      <td>Nikolas Furuta</td>
+      <td>Gianluca Lourenço</td>
       <td>Product Owner</td>
-      <td><a href="https://github.com/nikolasfurutadev"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+      <td><a href="https://github.com/Duraxxi"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
+      <td><a href="https://www.linkedin.com/in/joice-aparecida-581226250/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
       <td>Victor Coutinho</td>
@@ -250,12 +252,6 @@ Frontend rodando em `http://localhost:5173`.
       <td>Desenvolvedor</td>
       <td><a href="https://github.com/Allan-ramos122"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
       <td><a href="https://www.linkedin.com/in/isaque-elis-da-silva-2a4087226/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
-    </tr>
-    <tr>
-      <td>Gianluca Lourenço</td>
-      <td>Desenvolvedor</td>
-      <td><a href="https://github.com/Duraxxi"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></td>
-      <td><a href="https://www.linkedin.com/in/joice-aparecida-581226250/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
     </tr>
     <tr>
       <td>Guilherme Henrique</td>

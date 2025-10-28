@@ -3,10 +3,9 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import userRoutes from "./routes/userRoutes.js";
-import adminRoutes from "./routes/adminRoutes.js";
 import dashboardRoutes from "./routes/dashboardRoutes.js";
-import newsRoutes from "./routes/newsRoutes.js";
-
+import postsRoutes from "./routes/postsRoutes.js";
+import membrosRoutes from "./routes/membrosRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -19,9 +18,10 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api", userRoutes);
-app.use("/admin", adminRoutes);
 app.use("/dashboard", dashboardRoutes);
-app.use("/api/news", newsRoutes);
+app.use("/posts",  postsRoutes);
+app.use("/membros", membrosRoutes);
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
